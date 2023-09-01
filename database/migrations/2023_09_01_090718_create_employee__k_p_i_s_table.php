@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('employee__k_p_i_s', function (Blueprint $table) {
             $table->id();
+            $table->string('employee_kpi_id');
+            $table->string('employee_id');
+            $table->string('kpi_id');
+            $table->string('value');
+            $table->string('date');
             $table->timestamps();
         });
     }
